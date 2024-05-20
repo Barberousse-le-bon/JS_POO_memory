@@ -24,7 +24,7 @@ export class ViewMemory extends Observer
         const plateau = document.querySelector(".cards");
         const card = document.createElement("div");
         
-        console.log(this.#controllerMemory.getCard().getValue());
+        
         
         
         card.innerHTML = "&#x"+ this.#controllerMemory.getCard().getValue().toString(16);
