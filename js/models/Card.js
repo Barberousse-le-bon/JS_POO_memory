@@ -8,6 +8,7 @@ export class Card{
     constructor (_value) {
         
         this.#value = _value;
+        
 
     }
     

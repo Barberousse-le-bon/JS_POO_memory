@@ -10,6 +10,7 @@ export class ViewMemory extends Observer
 
         this.#controllerMemory = controllerMemory;
         this.#controllerMemory.addObserver(this);
+
     }
 
     notify()

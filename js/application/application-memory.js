@@ -11,6 +11,9 @@ export class ApplicationMemory
         this.#initControllers();
         this.#initViews();
         this.#controllerMemory.createCard();
+        let newcard = document.querySelector(".cards");
+        newcard.addEventListener("click", ()=>this.#controllerMemory.createCard());
+        
     }
 
     #initControllers()
