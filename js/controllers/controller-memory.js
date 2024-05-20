@@ -22,11 +22,14 @@ export class ControllerMemory extends Notifier
 
     createCard(){
 
-
-        let valueCard = Math.floor(Math.random()*0xF3)+0x1f90c;
+        
+        let valueCard = Math.floor(Math.random()*0xF3)+0x1F90C;
 
 
         this.#card = new Card(valueCard);
+        
+
+
 
         this.notify();
 

@@ -19,17 +19,20 @@ export class Memory{
 
         for (let i = 0; i < pairsNumber; i++) {
             
-            this.#cards.push(new ApplicationMemory());
+
+            let newPair = new ApplicationMemory();
+            this.#cards.push(newPair);
+            this.#cards.push(newPair);
+            console.log(newPair);
         }
-        //let newPair = new ApplicationMemory();
-
-
-
+        
+        
+        console.log(this.#cards);
     }
 
     getCardsNumber(){
 
-
+        return this.#cards.length;
 
 
     }
@@ -40,7 +43,7 @@ export class Memory{
 
 
 
-        return this.#cards;
+        return this.#cards[index];
     }
 
 

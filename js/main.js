@@ -7,6 +7,7 @@ window.addEventListener("load", () => {
 
     const memory = new Memory();
     memory.newGame(5);
+
     
 
 
